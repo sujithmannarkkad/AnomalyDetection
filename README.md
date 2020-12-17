@@ -38,4 +38,5 @@ If everything goes well, you should  be able to see the predcited salary vaule o
 Run the beow command to send the request with some pre-popuated values -
 ```
 python request.py
+
 ```
