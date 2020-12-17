@@ -19,18 +19,18 @@
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post" >
     	 
-         <input type="text" name="(AO)Percentage SLAs Met" placeholder="(AO)Percentage SLAs Met" required="required" value="{{ request.form['(AO)Percentage SLAs Met'] }}" /> 
-		<input type="text" name="Ageing" placeholder="Ageing" required="required"
+        SLA: <input type="text" name="(AO)Percentage SLAs Met" placeholder="(AO)Percentage SLAs Met" required="required" value="{{ request.form['(AO)Percentage SLAs Met'] }}" /> 
+		Ageing: <input type="text" name="Ageing" placeholder="Ageing" required="required"
 value="{{ request.form['Ageing'] }}"		/>
-		<input type="text" name="Average Resolution Effort - Incidents" placeholder="Average Resolution Effort - Incidents" required="required" 
+		AREI: <input type="text" name="Average Resolution Effort - Incidents" placeholder="Average Resolution Effort - Incidents" required="required" 
 		value="{{ request.form['Average Resolution Effort - Incidents'] }}"/>
-		<input type="text" name="Average Resolution Effort - Problems" placeholder="Average Resolution Effort - Problems" required="required"
+		AREP: <input type="text" name="Average Resolution Effort - Problems" placeholder="Average Resolution Effort - Problems" required="required"
 value="{{ request.form['Average Resolution Effort - Problems'] }}"		/>
-		<input type="text" name="Backlog Processing Efficiency - Incidents" placeholder="Backlog Processing Efficiency - Incidents" required="required" 
+		BEPI: <input type="text" name="Backlog Processing Efficiency - Incidents" placeholder="Backlog Processing Efficiency - Incidents" required="required" 
 		value="{{ request.form['Backlog Processing Efficiency - Incidents'] }}"/>
-		<input type="text" name="Backlog Processing Efficiency - Problems" placeholder="Backlog Processing Efficiency - Problems" required="required" 
+		BPEP: <input type="text" name="Backlog Processing Efficiency - Problems" placeholder="Backlog Processing Efficiency - Problems" required="required" 
 		value="{{ request.form['Backlog Processing Efficiency - Problems'] }}"/>
-		<input type="text" name="Delivered Defects" placeholder="Delivered Defects" required="required" 
+		DD: <input type="text" name="Delivered Defects" placeholder="Delivered Defects" required="required" 
 		value="{{ request.form['Delivered Defects'] }}"/>
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
